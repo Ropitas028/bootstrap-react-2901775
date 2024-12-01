@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitología Griega - Bienvenida</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                repeating-linear-gradient(45deg,
+                    #500a0a 0px,
+                    #2e0202 10px,
+                    #720202 10px,
+                    #640101 20px);
+            color: #fff;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(transparent, rgba(31, 31, 31, 0.1));
+            background-size: 100% 100%;
+        }
+
+        .hero-section {
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .greek-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background-image: repeating-linear-gradient(90deg,
+                    #c2c039 0px,
+                    #8f7521 20px,
+                    transparent 20px,
+                    transparent 40px);
+            opacity: 0.3;
+        }
+
+        .welcome-text {
+            background: linear-gradient(145deg, rgba(51, 5, 5, 0.9), rgba(48, 3, 3, 0.9));
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .greek-border {
+            border: 2px solid #d4af37;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        }
+
+        .greek-column {
+            position: relative;
+            padding: 20px;
+        }
+
+        .greek-column::before,
+        .greek-column::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 100%;
+            top: 0;
+            background: linear-gradient(to bottom, #d4af37, #bf9b30);
+            opacity: 0.3;
+        }
+
+        .greek-column::before {
+            left: 0;
+        }
+
+        .greek-column::after {
+            right: 0;
+        }
+
+        .btn-start {
+            background: linear-gradient(145deg, #d4af37, #bf9b30);
+            color: #000;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-start:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(145deg, #bf9b30, #d4af37);
+            color: #000;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            position: relative;
+            background: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <div class="greek-pattern"></div>
+            <h1 class="display-2 mb-4">Mitología Griega</h1>
+            <div class="greek-border">
+                <h2 class="h3 mb-3">El Origen de los Dioses y el Cosmos</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="welcome-text">
+                    <div class="greek-column">
+                        <h3 class="mb-4">¡Bienvenido al Mundo de los Dioses!</h3>
+                        <p class="lead">
+                            Embárcate en un viaje épico a través de las historias más fascinantes de la antigüedad.
+                            Conoce a los poderosos dioses del Olimpo, los heroicos semidioses y las criaturas místicas
+                            que pueblan estos relatos inmortales.
+                        </p>
+                        <p>
+                            En este módulo, exploraremos los mitos que han inspirado el arte, la literatura y la
+                            cultura durante milenios. Desde la creación del universo hasta las grandes hazañas de
+                            héroes legendarios.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="greek-border video-container">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/0XYbhqE0jUU"
+                            title="Introducción a la Mitología Griega" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5 mb-5">
+                    <a href="modulo.html"></a>
+                    <button class="btn btn-start btn-lg">
+                        Iniciar Módulo
+                        <i class="ms-2">→</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
